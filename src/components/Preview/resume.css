@@ -1,0 +1,115 @@
+.resume-canvas {
+  width: calc(816px * var(--preview-scale, 1));
+  height: calc(var(--resume-height, 1056px) * var(--preview-scale, 1));
+  flex: none;
+}
+.resume-page {
+  position: relative;
+  background: #fff;
+  color: #171717;
+  width: 816px;
+  min-height: 1056px;
+  padding: 0.5in 0.65in;
+  box-shadow: 0 2px 12px #192b401c;
+  font:
+    10.5pt/1.35 Arial,
+    Helvetica,
+    sans-serif;
+  overflow-wrap: anywhere;
+  transform: scale(var(--preview-scale, 1));
+  transform-origin: top left;
+}
+.resumehead {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.resumehead h1 {
+  font:
+    bold 21pt Arial,
+    Helvetica,
+    sans-serif;
+  margin: 0 0 5px;
+}
+.resumehead p {
+  font-size: 9.5pt;
+  margin: 2px 0;
+}
+.resumehead a {
+  color: inherit;
+  text-decoration: none;
+}
+.resumesection {
+  margin: 0 0 15px;
+}
+.resumesection:last-child {
+  margin-bottom: 0;
+}
+.resumesection h2 {
+  font:
+    bold 10.5pt Arial,
+    Helvetica,
+    sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 4px;
+  margin: 0 0 7px;
+  break-after: avoid;
+}
+.resumeitem {
+  margin: 0 0 6px;
+  break-inside: avoid;
+}
+.resumeitem:last-child {
+  margin-bottom: 0;
+}
+.resumeitemhead,
+.resumeitemdetail {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+.resumeitemhead > span,
+.resumeitemdetail > span:last-child {
+  text-align: right;
+  flex-shrink: 0;
+}
+.resumeitemdetail {
+  font-style: italic;
+  margin-top: 1px;
+}
+.resumeitem ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 4px 0 0;
+}
+.resumeitem li {
+  margin: 0 0 4px;
+}
+.resumeitem li:last-child {
+  margin-bottom: 0;
+}
+.resume-summary p {
+  margin: 0 0 5px;
+}
+.resume-skill {
+  margin: 0 0 3px;
+}
+.resume-skill:last-child {
+  margin-bottom: 0;
+}
+.blank {
+  display: grid;
+  place-items: center;
+  color: #9da8b7;
+}
+@media print {
+  .app .resume-canvas {
+    width: auto;
+    height: auto;
+  }
+  .app .resume-page {
+    transform: none;
+  }
+}

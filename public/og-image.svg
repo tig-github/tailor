@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f5f5f2"/>
+  <rect x="66" y="66" width="68" height="68" rx="18" fill="#15191f"/>
+  <path d="m87 83 13 6 13-6 9 7 9 21-10 4v14H79v-14l-10-4 9-21 9-7Z" fill="#fff"/>
+  <path d="m87 83 13 6-8 10-10-10 5-6Zm26 0-13 6 8 10 10-10-5-6Zm-17 19 4-4 4 4-3 6 4 18h-10l4-18-3-6Z" fill="#15191f"/>
+  <text x="156" y="113" fill="#15191f" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">Tailor</text>
+  <text x="74" y="267" fill="#15191f" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">One resume.</text>
+  <text x="74" y="352" fill="#15191f" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">Room to tailor.</text>
+  <text x="78" y="423" fill="#666" font-family="Arial, Helvetica, sans-serif" font-size="27">Keep one master. Shape a focused version for every opportunity.</text>
+  <rect x="815" y="122" width="294" height="391" rx="4" fill="#fff" stroke="#e3e3df"/>
+  <text x="962" y="171" text-anchor="middle" fill="#222" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">YOUR NAME</text>
+  <path d="M851 193h222" stroke="#888"/>
+  <text x="851" y="225" fill="#333" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">EXPERIENCE</text>
+  <path d="M851 234h222" stroke="#aaa"/>
+  <rect x="851" y="254" width="120" height="8" rx="4" fill="#555"/>
+  <rect x="1014" y="254" width="59" height="7" rx="3" fill="#d3d3d0"/>
+  <rect x="851" y="272" width="91" height="6" rx="3" fill="#aaa"/>
+  <rect x="861" y="297" width="211" height="6" rx="3" fill="#dededb"/>
+  <rect x="861" y="311" width="195" height="6" rx="3" fill="#dededb"/>
+  <rect x="861" y="325" width="157" height="6" rx="3" fill="#dededb"/>
+  <rect x="851" y="360" width="113" height="8" rx="4" fill="#555"/>
+  <rect x="1014" y="360" width="59" height="7" rx="3" fill="#d3d3d0"/>
+  <rect x="851" y="378" width="91" height="6" rx="3" fill="#aaa"/>
+  <rect x="861" y="403" width="211" height="6" rx="3" fill="#dededb"/>
+  <rect x="861" y="417" width="186" height="6" rx="3" fill="#dededb"/>
+  <text x="851" y="467" fill="#333" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">SKILLS</text>
+  <path d="M851 476h222" stroke="#aaa"/>
+  <rect x="851" y="491" width="199" height="6" rx="3" fill="#dededb"/>
+</svg>
