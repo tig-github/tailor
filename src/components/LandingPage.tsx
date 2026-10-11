@@ -23,7 +23,6 @@ export default function LandingPage({
       <div className="emptyicon">
         <TailorIcon />
       </div>
-      <p className="eyebrow">YOUR RESUME WORKSPACE</p>
       <h1>
         One master resume.
         <br />A focused version for every opportunity.
@@ -37,7 +36,7 @@ export default function LandingPage({
           <FileUp size={16} /> Import PDF
         </button>
         {hasResume ? (
-          <button className="button primary" onClick={onContinue}>
+          <button className="button primary continue-button" onClick={onContinue}>
             Continue editing <ArrowRight size={16} />
           </button>
         ) : (

@@ -7,7 +7,8 @@
   font-optical-sizing: auto;
   font-weight: 400;
   --ink: #202c3c;
-  --muted: #8591a2;
+  --muted: #59687d;
+  --focus: #315dc8;
   --line: #e8edf2;
   --blue: #3868df;
   --pale: #edf2ff;
@@ -69,7 +70,42 @@ button {
 }
 .brandlight {
   font-weight: 500;
-  color: #71809a;
+  color: var(--muted);
+}
+.coffee-nav-button {
+  margin-left: auto;
+  border: 1px solid #70472f;
+  background: #70472f;
+  color: #fff;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px #34211524;
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease,
+    box-shadow 140ms ease;
+}
+.coffee-nav-button:hover {
+  border-color: #593721;
+  background: #593721;
+  box-shadow: 0 3px 8px #34211530;
+}
+.coffee-nav-button:focus-visible {
+  outline: 3px solid #c6946a55;
+  outline-offset: 2px;
+}
+.theme-toggle {
+  margin-left: auto;
+  border: 1px solid #e1e6ed;
+  background: #fff;
+  color: #536176;
+  white-space: nowrap;
+}
+.theme-toggle:hover {
+  background: #f7f9fb;
+}
+.topactions + .theme-toggle,
+.coffee-nav-button + .theme-toggle {
+  margin-left: 0;
 }
 .variant {
   display: flex;
@@ -77,7 +113,7 @@ button {
   gap: 6px;
   border-left: 1px solid var(--line);
   padding-left: 20px;
-  color: #758198;
+  color: var(--muted);
 }
 .variant select {
   height: 36px;
@@ -102,7 +138,7 @@ button {
   border: 0;
   background: transparent;
   border-radius: 7px;
-  color: #7a8697;
+  color: var(--muted);
   display: inline-grid;
   place-items: center;
 }
@@ -121,7 +157,7 @@ button {
   background: transparent;
   border: 0;
   border-radius: 7px;
-  color: #728096;
+  color: var(--muted);
   padding: 7px 11px;
   display: flex;
   align-items: center;
@@ -146,7 +182,7 @@ button {
   gap: 7px;
   align-items: center;
   font-size: 11px;
-  color: #8d98a8;
+  color: var(--muted);
   margin-right: 6px;
   white-space: nowrap;
 }
@@ -191,7 +227,7 @@ button {
 .textbutton {
   border: 0;
   background: transparent;
-  color: #65758d;
+  color: var(--muted);
 }
 .workspace {
   max-width: 1500px;
@@ -219,13 +255,6 @@ button {
   align-items: flex-start;
   margin-bottom: 25px;
 }
-.eyebrow {
-  font-size: 9px;
-  letter-spacing: 1.5px;
-  color: #8a96a7;
-  font-weight: 700;
-  margin: 0 0 7px;
-}
 .panelhead h2,
 .previewhead h2 {
   font:
@@ -235,7 +264,7 @@ button {
   margin: 0 0 4px;
 }
 .muted {
-  color: #8995a6;
+  color: var(--muted);
   font-size: 12px;
   margin: 0;
 }
@@ -269,7 +298,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  color: #8792a2;
+  color: var(--muted);
   font-size: 10px;
   font-weight: 600;
 }
@@ -303,7 +332,7 @@ button {
   justify-content: space-between;
 }
 .sectionTitle h3 span {
-  color: #95a1b1;
+  color: var(--muted);
   font-weight: 500;
   margin-left: 4px;
 }
@@ -320,7 +349,7 @@ button {
   gap: 8px;
   list-style: none;
   padding: 0 11px;
-  color: #929cad;
+  color: var(--muted);
   cursor: pointer;
 }
 .sectionDragHandle {
@@ -360,10 +389,10 @@ button {
 }
 .order {
   font: 600 9px Manrope;
-  color: #9aa7b8;
+  color: var(--muted);
 }
 .danger:hover {
-  color: #d35c57;
+  color: #a53632;
   background: #fff0ef;
 }
 .cardbody {
@@ -467,19 +496,16 @@ button {
 .previewhead h2 {
   font-size: 16px;
 }
-.previewhead .eyebrow {
-  font-size: 8px;
-}
 .pagefit {
   font-size: 10px;
-  color: #4c9a75;
+  color: #286344;
   background: #eef8f3;
   padding: 6px 9px;
   border-radius: 6px;
   font-weight: 600;
 }
 .pagefit span {
-  color: #95a59c;
+  color: #466452;
   font-weight: 400;
   margin-left: 5px;
 }
@@ -488,7 +514,7 @@ button {
   background: #fef0ef;
 }
 .pagefit-overflow span {
-  color: #bd6a64;
+  color: #963f38;
 }
 .paperwrap {
   padding: 20px;
@@ -504,7 +530,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: 7px;
-  color: #929dac;
+  color: var(--muted);
   font-size: 10px;
   padding: 12px 0 0;
 }
@@ -525,7 +551,7 @@ button {
   font-size: 8px;
   letter-spacing: 1px;
   font-weight: 700;
-  color: #929eaf;
+  color: var(--muted);
 }
 .tagbar > div {
   display: flex;
@@ -551,13 +577,13 @@ button {
   color: #fff;
 }
 .tagbar .showall {
-  color: #778497;
+  color: var(--muted);
   border-color: #e6e9ee;
   margin-left: auto;
 }
 .tagbar small {
   font-size: 10px;
-  color: #9aa4b3;
+  color: var(--muted);
 }
 .tailorList {
   border-top: 1px solid var(--line);
@@ -587,7 +613,7 @@ button {
 }
 .checkrow span:last-of-type:not(:first-of-type) {
   text-align: right;
-  color: #909bac;
+  color: var(--muted);
   font-size: 9px;
 }
 .sectioncheck {
@@ -623,7 +649,7 @@ button {
 .backup-hint {
   max-width: 440px;
   margin: 18px 0 0;
-  color: #68768c;
+  color: var(--muted);
   font-size: 11px;
 }
 .link-warning {
@@ -656,11 +682,6 @@ button {
   width: 40px;
   height: 40px;
 }
-.empty .eyebrow {
-  font-size: 11px;
-  letter-spacing: 1.8px;
-  margin-bottom: 10px;
-}
 .empty h1 {
   font:
     700 54px/1.12 Manrope,
@@ -672,7 +693,7 @@ button {
 }
 .empty .muted {
   max-width: 650px;
-  color: #77808d;
+  color: var(--muted);
   font-size: 17px;
   line-height: 1.7;
 }
@@ -727,7 +748,7 @@ button {
   background: #253957;
 }
 .nudge button:nth-child(2) {
-  background: #5077d0;
+  background: #365eaf;
   border-radius: 6px;
   padding: 7px 9px;
   white-space: nowrap;
@@ -767,9 +788,6 @@ button {
   font:
     700 20px Manrope,
     sans-serif;
-}
-.variant-dialog-head .eyebrow {
-  margin-bottom: 7px;
 }
 .variant-add-button {
   margin-bottom: 12px;
@@ -812,7 +830,7 @@ button {
   outline: none;
 }
 .active-variant-label {
-  color: #718096;
+  color: var(--muted);
   background: #f0f2f5;
   border-radius: 5px;
   padding: 4px 6px;
@@ -884,6 +902,196 @@ button {
   margin: 0 0 10px;
   color: #b42318;
   font-size: 11px;
+}
+.app[data-theme='dark'] {
+  color-scheme: dark;
+  color: #e2e8f0;
+  background: #111821;
+  --ink: #e2e8f0;
+  --muted: #aab7c8;
+  --focus: #a8c0ff;
+  --line: #2a3543;
+  --blue: #8eabff;
+  --pale: #202e48;
+}
+.app[data-theme='dark'] .topbar,
+.app[data-theme='dark'] .panel,
+.app[data-theme='dark'] .mobiletabs,
+.app[data-theme='dark'] .variant-dialog {
+  background: #19222e;
+  border-color: #2a3543;
+  color: #e2e8f0;
+}
+.app[data-theme='dark'] .brand,
+.app[data-theme='dark'] .empty h1,
+.app[data-theme='dark'] .panelhead h2,
+.app[data-theme='dark'] .previewhead h2,
+.app[data-theme='dark'] .variant-dialog-head h2 {
+  color: #f1f5f9;
+}
+.app[data-theme='dark'] .brandmark,
+.app[data-theme='dark'] .emptyicon {
+  background: #090d12;
+}
+.app[data-theme='dark'] .muted,
+.app[data-theme='dark'] .backup-hint,
+.app[data-theme='dark'] .empty .muted,
+.app[data-theme='dark'] .grid label,
+.app[data-theme='dark'] .itemEditor label,
+.app[data-theme='dark'] .variantName label,
+.app[data-theme='dark'] .printtip,
+.app[data-theme='dark'] .link-warning {
+  color: #9aa8ba;
+}
+.app[data-theme='dark'] .formblock h3,
+.app[data-theme='dark'] .sectionTitle h3,
+.app[data-theme='dark'] .sectionCard summary > input,
+.app[data-theme='dark'] .checkrow,
+.app[data-theme='dark'] .checkrow strong,
+.app[data-theme='dark'] .checkrow b,
+.app[data-theme='dark'] .bulletcheck,
+.app[data-theme='dark'] .bulletcheck small,
+.app[data-theme='dark'] .variant-name-input {
+  color: #d1d9e5;
+}
+.app[data-theme='dark'] .secondary,
+.app[data-theme='dark'] .theme-toggle,
+.app[data-theme='dark'] .variant-action,
+.app[data-theme='dark'] .addsection button,
+.app[data-theme='dark'] .tagbar button,
+.app[data-theme='dark'] .sectionFormat,
+.app[data-theme='dark'] .variant select {
+  color: #d1d9e5;
+  background: #202b39;
+  border-color: #354253;
+}
+.app[data-theme='dark'] .secondary:hover,
+.app[data-theme='dark'] .theme-toggle:hover,
+.app[data-theme='dark'] .variant-action:hover,
+.app[data-theme='dark'] .addsection button:hover {
+  background: #293749;
+}
+.app[data-theme='dark'] .modeSwitch,
+.app[data-theme='dark'] .tagbar,
+.app[data-theme='dark'] .variant-create-form,
+.app[data-theme='dark'] .active-variant-label {
+  background: #202b39;
+  border-color: #354253;
+}
+.app[data-theme='dark'] .modeSwitch button,
+.app[data-theme='dark'] .textbutton,
+.app[data-theme='dark'] .mobiletabs button {
+  color: #aab7c8;
+}
+.app[data-theme='dark'] .modeSwitch button.selected,
+.app[data-theme='dark'] .mobiletabs button.selected {
+  background: #344760;
+  color: #c5d4ff;
+}
+.app[data-theme='dark'] .grid input,
+.app[data-theme='dark'] .itemEditor input,
+.app[data-theme='dark'] .variantName input,
+.app[data-theme='dark'] .variant-create-form > label:first-child input,
+.app[data-theme='dark'] .bulletedit textarea,
+.app[data-theme='dark'] .bulletfoot .taginput {
+  color: #e2e8f0;
+  background: #111923;
+  border-color: #354253;
+}
+.app[data-theme='dark'] .sectionCard,
+.app[data-theme='dark'] .sectionCard summary,
+.app[data-theme='dark'] .cardbody,
+.app[data-theme='dark'] .itemEditor,
+.app[data-theme='dark'] .bulletedit,
+.app[data-theme='dark'] .tailorList,
+.app[data-theme='dark'] .tailorSection,
+.app[data-theme='dark'] .variant-row {
+  border-color: #2e3a49;
+}
+.app[data-theme='dark'] .iconbtn {
+  color: #aab7c8;
+}
+.app[data-theme='dark'] .iconbtn:hover {
+  color: #e2e8f0;
+  background: #293749;
+}
+.app[data-theme='dark'] .bulletcheck small {
+  background: #293749;
+}
+.app[data-theme='dark'] .tagbar button.selected,
+.app[data-theme='dark'] .tagbar button.selected:hover {
+  color: #fff;
+  background: #3c5270;
+  border-color: #60799e;
+}
+.app[data-theme='dark'] .paperwrap {
+  background: #101720;
+}
+.app[data-theme='dark'] .pagefit {
+  color: #a8e2c5;
+  background: #203a30;
+}
+.app[data-theme='dark'] .pagefit span {
+  color: #c1d5ca;
+}
+.app[data-theme='dark'] .pagefit-overflow {
+  color: #ffc0bb;
+  background: #482b2b;
+}
+.app[data-theme='dark'] .pagefit-overflow span {
+  color: #e6b2ad;
+}
+.app[data-theme='dark'] .continue-button {
+  border-color: #4266c8;
+  background: #4266c8;
+  color: #fff;
+}
+.app[data-theme='dark'] .continue-button:hover {
+  border-color: #4a6dcc;
+  background: #4a6dcc;
+}
+.app[data-theme='dark'] .dialog-backdrop {
+  background: rgb(4 8 13 / 68%);
+}
+.app[data-theme='dark'] .variant-name-input:hover,
+.app[data-theme='dark'] .variant-name-input:focus {
+  border-color: #46566b;
+}
+.app[data-theme='dark'] .app .resume-page,
+.app[data-theme='dark'] .resume-page {
+  color-scheme: light;
+}
+/* Keep secondary text readable on every dark editor surface. */
+.app :is(.pdf-import-dialog, .pdf-ocr-dialog) .iconbtn {
+  color: #59687d;
+}
+.app :is(.pdf-import-dialog, .pdf-ocr-dialog) .iconbtn:hover {
+  color: #202c3c;
+  background: #eef2f7;
+}
+.app[data-theme='dark'] .active-variant-label,
+.app[data-theme='dark'] .variant-create-form > label:first-child,
+.app[data-theme='dark'] .addinline {
+  color: var(--muted);
+}
+.app[data-theme='dark'] .tagbar button:hover {
+  background: #293749;
+}
+.app[data-theme='dark'] .variant-error,
+.app[data-theme='dark'] .variant-delete,
+.app[data-theme='dark'] .danger:hover {
+  color: #ffc0bb;
+}
+.app[data-theme='dark'] .danger:hover {
+  background: #482b2b;
+}
+.app :is(a, button, input, textarea, select, summary):focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.app :is(input, textarea)::placeholder {
+  color: var(--muted);
+  opacity: 1;
 }
 @media (max-width: 1100px) {
   .topbar {
@@ -991,7 +1199,7 @@ button {
     border-radius: 7px;
     padding: 7px 12px;
     background: transparent;
-    color: #77859a;
+    color: var(--muted);
     display: flex;
     gap: 5px;
     align-items: center;

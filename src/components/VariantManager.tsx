@@ -109,7 +109,6 @@ export default function VariantManager({ file, mutate, onClose, onMessage }: Var
       >
         <header className="variant-dialog-head">
           <div>
-            <p className="eyebrow">RESUME VERSIONS</p>
             <h2 id="variant-dialog-title">Manage variants</h2>
             <p className="muted">Create focused versions from the same master resume.</p>
           </div>
@@ -181,6 +180,7 @@ export default function VariantManager({ file, mutate, onClose, onMessage }: Var
                     <input
                       type="radio"
                       name="active-variant"
+                      aria-label={`Use ${variant.name} variant`}
                       checked={variant.id === file.activeVariantId}
                       onChange={() => mutate((current) => (current.activeVariantId = variant.id))}
                     />

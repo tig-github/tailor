@@ -146,7 +146,6 @@ export default function PdfImportDialog({ initialFile, hasResume, onClose, onImp
     >
       <header className="pdf-import-head">
         <div>
-          <p className="eyebrow">START FROM YOUR RESUME</p>
           <h2 id="pdf-import-title">Import PDF</h2>
         </div>
         <button className="iconbtn" onClick={onClose} aria-label="Close PDF import">
@@ -268,7 +267,6 @@ export default function PdfImportDialog({ initialFile, hasResume, onClose, onImp
         <div className="pdf-ocr-icon">
           <FileUp size={21} />
         </div>
-        <p className="eyebrow">PDF MADE OF IMAGES</p>
         <h2 id="pdf-ocr-title">This PDF seems to be made of images</h2>
         <p>
           Would you like Tailor to find and extract text from its pages? This happens on your device

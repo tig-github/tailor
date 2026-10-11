@@ -102,7 +102,7 @@
 .blank {
   display: grid;
   place-items: center;
-  color: #9da8b7;
+  color: #59687d;
 }
 @media print {
   .app .resume-canvas {

@@ -12,6 +12,9 @@ import {
   X,
   GripVertical,
   SlidersHorizontal,
+  Coffee,
+  Moon,
+  Sun,
 } from 'lucide-react'
 import { nanoid } from 'nanoid'
 import { useStore, visible } from './store'
@@ -42,6 +45,7 @@ function App() {
   const [msg, setMsg] = useState('')
   const [showNudge, setShowNudge] = useState(false)
   const [showLanding, setShowLanding] = useState(false)
+  const [darkMode, setDarkMode] = useState(false)
   const [showVariantManager, setShowVariantManager] = useState(false)
   const [pdfImport, setPdfImport] = useState<{ initialFile?: File } | null>(null)
   const [mobileTab, setMobileTab] = useState<'edit' | 'preview'>('edit')
@@ -194,6 +198,7 @@ function App() {
   return (
     <div
       className="app"
+      data-theme={darkMode ? 'dark' : 'light'}
       onDragOver={(e) => e.preventDefault()}
       onDrop={(e) => {
         e.preventDefault()
@@ -224,6 +229,7 @@ function App() {
           <>
             <div className="variant">
               <select
+                aria-label="Active resume variant"
                 value={active?.id ?? ''}
                 onChange={(e) => mutate((f) => (f.activeVariantId = e.target.value))}
               >
@@ -281,6 +287,26 @@ function App() {
             </div>
           </>
         )}
+        {(!file || showLanding) && (
+          <button
+            className="button coffee-nav-button"
+            onClick={() => {
+              setMsg('Donation link coming soon.')
+              window.setTimeout(() => setMsg(''), 3000)
+            }}
+          >
+            <Coffee size={15} aria-hidden="true" /> Buy me a coffee
+          </button>
+        )}
+        <button
+          className="button theme-toggle"
+          onClick={() => setDarkMode((enabled) => !enabled)}
+          aria-label={`Switch to ${darkMode ? 'light' : 'dark'} mode`}
+          title={`Switch to ${darkMode ? 'light' : 'dark'} mode`}
+        >
+          {darkMode ? <Sun size={16} aria-hidden="true" /> : <Moon size={16} aria-hidden="true" />}
+          <span>{darkMode ? 'Light' : 'Dark'}</span>
+        </button>
         <input
           ref={fileInput}
           hidden
@@ -375,7 +401,6 @@ function App() {
                 <>
                   <div className="panelhead">
                     <div>
-                      <p className="eyebrow">MASTER RESUME</p>
                       <h2>Edit your content</h2>
                       <p className="muted">
                         Everything lives here. Variants only change what shows.
@@ -746,7 +771,6 @@ function App() {
                 <>
                   <div className="panelhead">
                     <div>
-                      <p className="eyebrow">MAKE IT RELEVANT</p>
                       <h2>Tailor this version</h2>
                       <p className="muted">
                         Choose what to include. Changes stay linked to your master.

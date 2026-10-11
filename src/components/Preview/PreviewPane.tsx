@@ -46,7 +46,6 @@ export default function PreviewPane({
     <aside className={`preview panel ${hiddenOnMobile ? 'hide-mobile' : ''}`}>
       <div className="previewhead">
         <div>
-          <p className="eyebrow">LIVE PREVIEW</p>
           <h2>Your resume</h2>
         </div>
         <div className={`pagefit ${pages > 1 ? 'pagefit-overflow' : ''}`}>
