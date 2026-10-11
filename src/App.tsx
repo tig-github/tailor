@@ -288,15 +288,15 @@ function App() {
           </>
         )}
         {(!file || showLanding) && (
-          <button
+          <a
             className="button coffee-nav-button"
-            onClick={() => {
-              setMsg('Donation link coming soon.')
-              window.setTimeout(() => setMsg(''), 3000)
-            }}
+            href="https://buymeacoffee.com/tig_github"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Buy me a coffee (opens in a new tab)"
           >
             <Coffee size={15} aria-hidden="true" /> Buy me a coffee
-          </button>
+          </a>
         )}
         <button
           className="button theme-toggle"

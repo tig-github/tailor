@@ -73,6 +73,7 @@ button {
   color: var(--muted);
 }
 .coffee-nav-button {
+  text-decoration: none;
   margin-left: auto;
   border: 1px solid #70472f;
   background: #70472f;
