@@ -1,6 +1,10 @@
 # Tailor
 
-A private, browser-only resume editor. Your resume stays in the open tab until you save a `.resume` backup. There is no account, server storage, or browser persistence.
+A simple frontend, browser-only resume editor. Your resume stays in the open tab until you save a `.resume` backup. There is no account, server storage, or browser persistence.
+
+Tailor solves the problem of managing multiple resumes for different types of roles. Now you can easily manage multiple variants, select and deselect specific relevant bullet points and sections, and easily save them for multiple applications.
+
+<img width="1882" height="903" alt="tailor-png" src="https://github.com/user-attachments/assets/a594d756-1d3a-4883-b00b-580824eada53" />
 
 ## Run locally
 
