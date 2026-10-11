@@ -6,7 +6,7 @@
   <text x="156" y="113" fill="#15191f" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">Tailor</text>
   <text x="74" y="267" fill="#15191f" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">One resume.</text>
   <text x="74" y="352" fill="#15191f" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">Room to tailor.</text>
-  <text x="78" y="423" fill="#666" font-family="Arial, Helvetica, sans-serif" font-size="27">Keep one master. Shape a focused version for every opportunity.</text>
+  <text x="78" y="423" fill="#666" font-family="Arial, Helvetica, sans-serif" font-size="27"><tspan x="78">Keep one master. Shape a focused version</tspan><tspan x="78" dy="36">for every opportunity.</tspan></text>
   <rect x="815" y="122" width="294" height="391" rx="4" fill="#fff" stroke="#e3e3df"/>
   <text x="962" y="171" text-anchor="middle" fill="#222" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">YOUR NAME</text>
   <path d="M851 193h222" stroke="#888"/>
